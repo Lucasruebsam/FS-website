@@ -72,31 +72,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        serialize: ({ site, allSitePage }) =>
-          allSitePage.edges.map(edge => {
-            let path = edge.node.path
-            let priority = 0.5
-            // matching the root /
-            if (path.match(/^\/$/)) {
-              priority = 1.0
-            } else if (path.match(/imprint/)) {
-              priority = 0.3
-            } else if (path.match(/data-protection/)) {
-              priority = 0.2
-            } else if (path.match(/sitemap/)) {
-              priority = 0.1
-            }
-            console.log("priority: ", priority.toFixed(1), "   path: ", path)
-            return {
-              url: site.siteMetadata.siteUrl + edge.node.path,
-              changefreq: `monthly`,
-              priority,
-            }
-          }),
-      },
+    
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
