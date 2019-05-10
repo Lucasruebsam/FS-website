@@ -25,10 +25,12 @@ class BlogPage extends React.Component {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <div key={node.fields.slug}>
-                <Heading as="h3" fontSize={3}>
+                <Heading as="h3" fontSize={3} color="black">
                   <Link to={node.fields.slug}>{title}</Link>
                 </Heading>
-                <small>{node.frontmatter.date}</small>
+                <small>
+                  <i>{node.frontmatter.date}</i>
+                </small>
                 <Text
                   mt={"1rem"}
                   mb={"2rem"}
@@ -54,7 +56,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: ASC }) {
       edges {
         node {
           excerpt

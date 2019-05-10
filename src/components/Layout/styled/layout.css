@@ -4,11 +4,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #607D8B;
+  color: grey;
 }
 
 a:hover {
-  color: #78909C;
+  color: lightgrey;
 }
 
 h1,

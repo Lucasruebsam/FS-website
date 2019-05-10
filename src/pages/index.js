@@ -26,14 +26,16 @@ const IndexPage = () => (
       </picture>
     </Figure>
     <Section>
-      <H1>Hi people</H1>
-      <P>Welcome to this new Gatsby site.</P>
-      <P>Now you have the basis to build something great.</P>
+      <H1>Welcome to my journey</H1>
+      <P>I'm Fabian Saller, Singer & Songwriter from Düsseldorf.</P>
       <P>
-        Of course, you can also use icons, e.g.{" "}
-        <FontAwesomeIcon icon="coffee" />, <FontAwesomeIcon icon="yin-yang" />,{" "}
-        <FontAwesomeIcon icon="peace" />.
+        On this website you can find out when and where I perform, a blog about
+        past concerts and a small gallery of my performances.
       </P>
+      <P>
+        Don't forget to follow me on Social Media. The links are down below.
+      </P>
+      <P>I hope to see you soon in the crowd!</P>
     </Section>
   </Layout>
 )

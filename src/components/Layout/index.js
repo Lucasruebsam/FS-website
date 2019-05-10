@@ -14,6 +14,8 @@ import {
   fab,
   faFacebookSquare,
   faTwitterSquare,
+  faInstagram,
+  faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons"
 import { faPeace, faCoffee, faYinYang } from "@fortawesome/free-solid-svg-icons"
 
@@ -33,7 +35,8 @@ library.add(
   faPeace,
   faYinYang,
   faTwitterSquare,
-  faFacebookSquare
+  faFacebookSquare,
+  faInstagram
 )
 
 const Layout = ({ children }) => {
@@ -56,23 +59,37 @@ const Layout = ({ children }) => {
             <Logo to="/" text="Fabian Saller" img={imgLogo} />
             <MenuItem to="/">Home</MenuItem>
             <MenuItem to="/blog/">Dates</MenuItem>
-            <MenuItem to="/Contact/">Contact</MenuItem>
             <MenuItem to="/Gallery/">Gallery</MenuItem>
+            <MenuItem to="/Contact/">Contact</MenuItem>
           </Menu>
         </Header>
         <Main>{children}</Main>
         <Footer>
           <div>© Lucas Rübsam</div>
-          <Flex width={"3rem"} justifyContent="space-between">
+          <Flex width={"5rem"} justifyContent="space-between">
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/fabisallermusic"
               target="_blank"
               rel="noopener nofollow"
             >
               <FontAwesomeIcon icon={["fab", "twitter-square"]} />
             </a>
             <a
-              href="https://facebook.com/"
+              href="https://www.instagram.com/fabisaller/"
+              target="_blank"
+              rel="noopener nofollow"
+            >
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC4kUh0adM1ceFOxO1mD027w"
+              target="_blank"
+              rel="noopener nofollow"
+            >
+              <FontAwesomeIcon icon={["fab", "youtube-square"]} />
+            </a>
+            <a
+              href="https://www.facebook.com/fabisaller"
               target="_blank"
               rel="noopener nofollow"
             >

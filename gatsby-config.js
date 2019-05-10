@@ -3,9 +3,9 @@ module.exports = {
   siteMetadata: {
     title: `Fabian Saller`,
     description: `This is a website about the journey of a singer songwriter, Fabian Saller`,
-    author: `Dr. Ulrich Anders`,
-    version: "0.8.0",
-    siteUrl: "https://gsua.de",
+    author: `Lucas Rübsam`,
+    version: "1.0.0",
+    siteUrl: "",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
