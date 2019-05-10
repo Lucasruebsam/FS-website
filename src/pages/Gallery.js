@@ -42,7 +42,7 @@ const GalleryPage = () => (
           <img src={img5} />
         </div>
       </Carousel>
-      <H3>Here are my newest Video on Youtube!</H3>
+      <H3>Here are my newest Videos on Youtube!</H3>
       <RespGrid min={"240px"}>
         <Box>
           <iframe
