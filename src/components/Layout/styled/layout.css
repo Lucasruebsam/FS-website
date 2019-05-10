@@ -42,3 +42,13 @@ picture {
   overflow: hidden;
   margin: 0;
 }
+
+pics {
+  background: transparent;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
